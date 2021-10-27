@@ -1,9 +1,9 @@
 # my_blog
 这是一个简单的个人博客网站
 ### 技术栈
-前端:SemanticUI
-后端:Springboot+thymeleaf+JPA
-数据库：MySQL
+#### 前端:SemanticUI
+#### 后端:Springboot+thymeleaf+JPA
+#### 数据库：MySQL
 ### 功能简介
 #### 前端页面
 1.博客主页浏览
