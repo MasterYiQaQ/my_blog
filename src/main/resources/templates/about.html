@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+		<link rel="stylesheet" th:href="@{/css/me.css}" />
+		</head>
+		<title>hikari</title>
+	</head>
+	<body>
+	<!-- 导航 -->
+	<div th:include="header::header(5)"></div>
+	<!-- 中间内容 -->
+	<div class="ui container m-padded-tb-large">
+		<div class="ui grid">
+			<div class="eleven wide column">
+				<div class="ui segment">
+					<img src="http://39.106.56.97/usr/uploads/image/sidebar.png" class="ui fluid rounded image"/>
+				</div>
+			</div>
+			<div class="five wide column">
+				<div class="ui left aligned top attached segment">
+					<p style="font-weight: 900; font-size: 18px;">关于我</p>
+				</div>
+				<div class="ui attached segment">
+					<p class="m-text-lined">我的知识来自网络，建立博客是为了记录工作经验以及生活点滴，也是将知识回馈给网络上有所需要的朋友。博客主要涵盖了深度学习，图像描述，SpringBoot项目教程等等。</p>
+					<p class="m-text-lined">如果说我看得比别人更远些，那是因为我站在巨人的肩膀上。</p>
+				</div>
+				<div class="ui attached segment">
+					<div class="ui orange basic label" style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						编程
+					</div>
+					<div class="ui orange basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						写作
+					</div>
+					<div class="ui orange basic label" style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						运动
+					</div>
+					<div class="ui orange basic label" style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						思考
+					</div>
+					<div class="ui orange basic label" style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						...
+					</div>
+				</div>
+				<div class="ui attached segment">
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						HTML
+					</div>
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						CSS
+					</div>
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						JavaScript
+					</div>
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						Python
+					</div>
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						Java
+					</div>
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						C++
+					</div>
+					<div class="ui green basic label " style="font-size: 14px;margin-bottom: 0.8em;margin-top: 0.8em;">
+						...
+					</div>
+				</div>
+				<div class="ui bottom attached segment">
+					<a href="https://github.com/MasterYiQaQ" target="_blank" class="ui icon botton"><i class="large grey circular github icon"></i></a>
+					<a href="#" id="wechatButton" class="ui icon botton"><i class="large grey circular weixin icon"></i></a>
+					<a href="#" class="ui qq icon botton" data-content="1311455057"><i class="large grey circular qq icon"></i></a>
+				</div>
+				<div class="ui wechatQR flowing popup transition hidden">
+					<div class="image">
+						<img src="./images/wechat.png" alt="" class="ui rounded bordered image" style="height: 200px;"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div th:include="footer::footer"></div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+	<script>
+		$('.qq').popup();
+		$('#wechatButton').popup({
+		    popup:$('.wechatQR.popup'),
+			on :"click",
+			position:"top center",
+		  });
+	</script>
+	</body>
+</html>

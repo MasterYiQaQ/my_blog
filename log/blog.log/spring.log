@@ -1,0 +1,30 @@
+2021-10-18 09:02:09.667  INFO 7752 --- [restartedMain] com.wang.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-LI0DPQ6 with PID 7752 (E:\spring boot\blog\target\classes started by Yi in E:\spring boot\blog)
+2021-10-18 09:02:09.669 DEBUG 7752 --- [restartedMain] com.wang.BlogApplication                 : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-18 09:02:09.669  INFO 7752 --- [restartedMain] com.wang.BlogApplication                 : No active profile set, falling back to default profiles: default
+2021-10-18 09:02:09.709  INFO 7752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-18 09:02:09.710  INFO 7752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-18 09:02:10.259  WARN 7752 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.wang]' package. Please check your configuration.
+2021-10-18 09:02:10.568  INFO 7752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-18 09:02:10.575  INFO 7752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-18 09:02:10.575  INFO 7752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-18 09:02:10.639  INFO 7752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-18 09:02:10.639  INFO 7752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 929 ms
+2021-10-18 09:02:10.894  WARN 7752 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-18 09:02:11.062  INFO 7752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-18 09:02:11.093  INFO 7752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-18 09:02:11.104  INFO 7752 --- [restartedMain] com.wang.BlogApplication                 : Started BlogApplication in 1.874 seconds (JVM running for 2.605)
+2021-10-18 09:12:48.329  INFO 9316 --- [restartedMain] com.wang.BlogApplication                 : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-LI0DPQ6 with PID 9316 (E:\spring boot\blog\target\classes started by Yi in E:\spring boot\blog)
+2021-10-18 09:12:48.331 DEBUG 9316 --- [restartedMain] com.wang.BlogApplication                 : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-18 09:12:48.331  INFO 9316 --- [restartedMain] com.wang.BlogApplication                 : No active profile set, falling back to default profiles: default
+2021-10-18 09:12:48.372  INFO 9316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-18 09:12:48.373  INFO 9316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-18 09:12:48.881  WARN 9316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.wang]' package. Please check your configuration.
+2021-10-18 09:12:49.159  INFO 9316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-18 09:12:49.167  INFO 9316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-18 09:12:49.167  INFO 9316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-18 09:12:49.222  INFO 9316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-18 09:12:49.223  INFO 9316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
+2021-10-18 09:12:49.442  WARN 9316 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-18 09:12:49.608  INFO 9316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-18 09:12:49.641  INFO 9316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-18 09:12:49.652  INFO 9316 --- [restartedMain] com.wang.BlogApplication                 : Started BlogApplication in 1.72 seconds (JVM running for 2.401)

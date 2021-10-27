@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+		<link rel="stylesheet" th:href="@{/css/me.css}" />
+		</head>
+		<title>hikari</title>
+	</head>
+	<body>
+	<!-- 导航 -->
+	<div th:replace="admin/header::adminheader"></div>
+	<!-- 中间内容 -->
+	<div class="ui container m-padded-tb-large">
+		<div class="ui top attached segment">
+			<div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+				<i class="close icon"></i>
+				<div class="header">提示：</div>
+				<p th:text="${message}">恭喜！操作成功</p>
+			</div>
+		</div>
+		<div class="ui attached segment">
+			<table class="ui celled striped  center aligned table">
+				<thead>
+				<tr style="height: 25px;">
+					<th class="two wide">编号</th>
+					<th class="eight wide">标签名称</th>
+					<th class="two wide">操作</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr style="height: 45px;" th:each="tag,iterStat:${page.content}">
+					<td th:text="${iterStat.count}"></td>
+					<td th:text="${tag.name}"></td>
+					<td>
+						<a th:href="@{/admin/tags/{id}/input(id=${tag.id})}" class="ui teal basic label m-margin-padding-big">修改</a>
+						<a th:href="@{/admin/tags/{id}/delete(id=${tag.id})}" class="ui orange basic label m-margin-padding-big">删除</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="ui four bottom attached segment"  style="margin-bottom: 5em;">
+			<div class="ui middle four column grid">
+				<div class="column"></div>
+				<div class="column">
+					<a th:href="@{/admin/tags(page=${page.number}-1)}"  class="ui left labeled icon button">
+						<i class="left arrow icon"></i>上一页
+					</a>
+				</div>
+				<div class="right aligned column">
+					<a th:href="@{/admin/tags(page=${page.number}+1)}"  class="ui right labeled icon button">
+						<i class="right arrow icon"></i>下一页
+					</a>
+				</div>
+				<div class="right aligned column">
+					<a th:href="@{/admin/tags/input}" class="ui blue left labeled icon button"><i class="plus icon"></i>新增</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div th:replace="admin/footer::adminfooter"></div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+	<script>
+		$('.ui.search.dropdown').dropdown();
+	</script>
+	<script>
+		$('.ui.dropdown.user').dropdown();
+	</script>
+	<script>
+		$('.message .close').on('click',function () {
+			$(this).closest('.message').transition('fade');
+		});
+	</script>
+	</body>
+</html>

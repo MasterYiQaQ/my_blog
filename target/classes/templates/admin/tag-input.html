@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css"/>
+		<link rel="stylesheet" th:href="@{/lib/editormd/css/editormd.min.css}"/>
+		<link rel="stylesheet" th:href="@{/lib/highlight/styles/base16/solarized-dark.min.css}" />
+		<link rel="stylesheet" th:href="@{/css/me.css}" />
+		</head>
+		<title>hikari</title>
+	</head>
+	<body>
+	<!-- 导航 -->
+	<div th:include="admin/header::adminheader"></div>
+	<!-- 中间内容 -->
+	<div class="ui container m-padded-tb-large">
+		<div class="ui container">
+			<form th:object="${tag}" th:action="*{id}==null ? @{/admin/tags} : @{/admin/tags/{id}(id=*{id})}" method="post" class="ui form">
+				<input type="hidden" name="id" th:value="*{id}">
+				<div class="required field">
+					<div class="ui left labeled input">
+						<div class="ui selection teal basic label">
+							<input type="hidden" value="名称" />
+							<div class="default text">名称</div>
+						</div>
+						<input type="text" name="name" th:value="*{name}"/>
+					</div>		
+				</div>
+				<div class="ui error message"></div>
+				<!--/*/
+					<div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+						<i class="close icon"></i>
+						<div class="header">验证失败</div>
+						<p th:errors="*{name}">提交信息不符合规则</p>
+			        </div>
+				/*/-->
+				<div class="ui right aligned  borderless container" style="margin-bottom: 5em;">
+					<button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+					<button type="submit" class="ui button">提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div th:replace="admin/footer::adminfooter"></div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+	</body>
+	<script>
+		$('.ui.form').form({
+			fields:{
+				name:{
+					identifier: 'name',
+					rules:[{
+						type:'empty',
+						prompt:'请输入标签名称'
+					}]
+				},
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,63 @@
+body{
+	background-image: url(../images/bg.png) ;
+}
+
+.m-padded-tb-mini{
+	padding-top: 0.1em !important;
+	padding-bottom: 0.1em !important;
+	
+}
+.m-padded-tb-big{
+	padding-top: 0.5em !important;
+	padding-bottom: 0.5em !important;
+	
+}
+.m-padded-tb-large{
+	padding-top: 3em !important;
+	padding-bottom: 2em !important;
+}
+.m-padded-tb-huge{
+	padding-top: 4em !important;
+	padding-bottom: 2em !important;
+}
+.m-padded-tb-massive{
+	padding-top: 5em !important;
+	padding-bottom: 5em !important;
+}
+.m-text-thin{
+	font-size: 300 !important;
+}
+.m-text-spaced{
+	letter-spacing: 1px !important;
+}
+.m-text-lined{
+	line-height: 1.8 !important;
+}
+.m-opacity-mini{
+	opacity: 0.8 !important;
+}
+.m-inline-block{
+	display: inline-block !important;
+}
+.m-margin-padding{
+	margin-top: 0.3em !important;
+	margin-bottom: 0.3em !important;
+}
+.m-margin-padding-big{
+	margin-bottom: 3em !important;
+}
+.m-padding-lr-mini{
+	padding-left: 1em ;
+	padding-right: 1em ;
+}
+.m-padding-lr{
+	padding-top: 2em;
+	padding-left: 4em ;
+	padding-right: 4em ;
+	padding-bottom: 2em;
+}
+.is-position-fixed {
+  position:fixed !important;
+  top:100px !important;
+  right: 10px !important;
+}

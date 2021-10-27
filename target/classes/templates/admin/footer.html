@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+		<link rel="stylesheet" th:href="@{/css/me.css}" />
+		<title></title>
+	</head>
+	<body>
+	<div th:fragment="adminfooter">
+		<div class="ui vertical footer segment m-padded-tb-huge" style="background-color:#C0C0C0">
+			<div class="ui center aligned container " >
+			<div class="ui inverted divided stackable grid">
+			        <div class="row">
+			          <div class="three wide column">
+						  <img th:src="@{/images/wechat.png}" class="ui rounded image" style="width: 110px;"/>
+					  </div>
+			          <div class="three wide column">
+						  <h4 class="ui header m-text-spaced m-opacity-mini">友情链接</h4>
+						  <div class="ui link list">
+							  <a href="https://github.com/MasterYiQaQ"  target="_blank" class="item m-text-thin">Github</a>
+							  <a href="https://space.bilibili.com/2964893"  target="_blank" class="item m-text-thin">BiliBili</a>		
+						  </div>
+					  </div>
+			          <div class="three wide column">
+						  <h4 class="ui header m-text-spaced m-opacity-mini">联系我</h4>
+						  <div class="ui link list">
+							  <p class="m-text-thin m-text-spaced m-opacity-mini">Email:tjwy@163.com
+							  QQ:1311455057</p>
+						  </div>
+					  </div>
+			          <div class="seven wide column">
+						  <h4 class="ui header">hikari</h4>
+						  <div class="ui link list m-text-thin m-text-spaced m-opacity-mini">
+							  <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+						  </div>
+					  </div>
+			        </div>
+			</div>
+			<div class="ui inverted section divider"></div>
+			<p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021-2022 hikari Designed by MasterY </p>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

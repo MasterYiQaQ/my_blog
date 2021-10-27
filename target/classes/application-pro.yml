@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: warn
+    com.wang: debug
+  file:
+    path: log/blog-dev.log
+server:
+  port: 8081

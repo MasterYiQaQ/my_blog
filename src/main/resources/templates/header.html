@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+		<link rel="stylesheet" th:href="@{/css/me.css}" />
+		<title></title>
+	</head>
+	<body>
+		<!-- 导航 -->
+		<div th:fragment="header(n)">
+			<nav class="ui attached  m-padded-tb-mini">
+				<div class="ui container">
+					<div class="ui borderless stackable menu" style="background-color: #C0C0C0 ;">
+						<h1 class="ui teal header item">hikari</h1>
+						<a th:href="@{/}" class="item" th:classappend="${n==1} ? active"><i class="home icon"></i>首页</a>
+						<a th:href="@{/type}" class="item" th:classappend="${n==2} ? active"><i class="idea icon"></i>分类</a>
+						<a th:href="@{/tag}" class="item" th:classappend="${n==3} ? active"><i class="tags icon"></i>标签</a>
+						<a th:href="@{/archives}" class="item" th:classappend="${n==4} ? active"><i class="clone icon"></i>归档</a>
+						<a th:href="@{/about}" class="item" th:classappend="${n==5} ? active"><i class="info icon"></i>关于我</a>
+						<div class="right item">
+							<div class="ui icon input">
+							<input type="text" placeholder="Search..." />
+							<i class="search link icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</body>
+</html>
